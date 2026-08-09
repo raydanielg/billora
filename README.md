@@ -1,6 +1,6 @@
-# shadcn/ui monorepo template
+# Billora
 
-This is a Next.js monorepo template with shadcn/ui.
+A Next.js monorepo with shadcn/ui.
 
 ## Adding components
 

@@ -11,6 +11,15 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+export const metadata = {
+  title: "Billora",
+  description: "Billora — Invoice. Share. Get Paid.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
