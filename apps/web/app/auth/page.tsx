@@ -79,7 +79,7 @@ export default function AuthPage() {
           </TabsList>
 
           <TabsContent value="login" className="mt-6">
-            <LoginForm />
+            <LoginForm redirectUrl="/dashboard" onSwitchTab={(v) => setTab(v as Tab)} />
             <div className="mt-4 text-center text-sm">
               <button
                 type="button"
@@ -92,20 +92,11 @@ export default function AuthPage() {
           </TabsContent>
 
           <TabsContent value="register" className="mt-6">
-            <RegisterForm />
+            <RegisterForm redirectUrl="/dashboard" onSwitchTab={(v) => setTab(v as Tab)} />
           </TabsContent>
 
           <TabsContent value="forgot" className="mt-6">
-            <ForgotPasswordForm />
-            <div className="mt-4 text-center text-sm">
-              <button
-                type="button"
-                onClick={() => setTab("login")}
-                className="text-muted-foreground underline underline-offset-4 hover:text-foreground transition-colors"
-              >
-                Back to login
-              </button>
-            </div>
+            <ForgotPasswordForm onSwitchTab={(v) => setTab(v as Tab)} />
           </TabsContent>
         </Tabs>
       </div>
